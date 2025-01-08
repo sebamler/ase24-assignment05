@@ -6,7 +6,7 @@ import de.unibayreuth.se.taskboard.business.exceptions.MalformedRequestException
 import de.unibayreuth.se.taskboard.business.exceptions.UserNotFoundException;
 import de.unibayreuth.se.taskboard.business.ports.UserPersistenceService;
 import de.unibayreuth.se.taskboard.business.ports.UserService;
-import lombok.NonNull;
+import org.springframework.lang.NonNull;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
