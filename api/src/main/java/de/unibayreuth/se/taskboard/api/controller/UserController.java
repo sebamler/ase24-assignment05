@@ -34,6 +34,9 @@ import java.util.UUID;
 @RequiredArgsConstructor
 public class UserController {
 
+//      TODO: (base) sebastian@bt-nac-g124 ase24-assignment05 %  curl --header "Content-Type: application/json" --request POST --data '{"name": "Denise"}' http://localhost:8080/api/users
+//      {"timestamp":"2025-01-09T16:55:38.417+00:00","status":500,"error":"Internal Server Error","message":"createdAt is marked non-null but is null","path":"/api/users"}%
+
     private final UserService userService;
     private final UserDtoMapper userDtoMapper;
     // Done: Add GET /api/users endpoint to retrieve all users.
