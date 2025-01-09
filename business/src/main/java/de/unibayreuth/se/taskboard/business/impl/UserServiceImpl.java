@@ -20,8 +20,14 @@ public class UserServiceImpl implements UserService {
     private final UserPersistenceService userPersistenceService;
 
     @Override
+    public void clear() {
+        userPersistenceService.clear();
+    }
+
+
+    @Override
     @NonNull
-    public List<User> getAllUsers() {
+    public List<User> getAll() {
         return userPersistenceService.getAll();
     }
 
