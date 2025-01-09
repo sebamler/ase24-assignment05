@@ -1,9 +1,7 @@
 package de.unibayreuth.se.taskboard.api.controller;
 
-import de.unibayreuth.se.taskboard.api.dtos.TaskDto;
 import de.unibayreuth.se.taskboard.api.dtos.UserDto;
 import de.unibayreuth.se.taskboard.api.mapper.UserDtoMapper;
-import de.unibayreuth.se.taskboard.business.domain.User;
 import de.unibayreuth.se.taskboard.business.exceptions.DuplicateNameException;
 import de.unibayreuth.se.taskboard.business.exceptions.MalformedRequestException;
 import de.unibayreuth.se.taskboard.business.exceptions.UserNotFoundException;
@@ -33,9 +31,6 @@ import java.util.UUID;
 @RequestMapping("/api/users")
 @RequiredArgsConstructor
 public class UserController {
-
-//      TODO: (base) sebastian@bt-nac-g124 ase24-assignment05 %  curl --header "Content-Type: application/json" --request POST --data '{"name": "Denise"}' http://localhost:8080/api/users
-//      {"timestamp":"2025-01-09T16:55:38.417+00:00","status":500,"error":"Internal Server Error","message":"createdAt is marked non-null but is null","path":"/api/users"}%
 
     private final UserService userService;
     private final UserDtoMapper userDtoMapper;
