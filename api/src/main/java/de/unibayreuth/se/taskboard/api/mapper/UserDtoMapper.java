@@ -18,7 +18,6 @@ public abstract class UserDtoMapper {
     public abstract UserDto fromBusiness(User user);
 
     //Done: Fix this mapper after resolving the other TODOs.
-    @Mapping(target = "id", ignore = true)
     @Mapping(target = "name", source = "name")
     @Mapping(target = "createdAt", expression = "java(mapTimestamp(source.getCreatedAt()))")
     public abstract User toBusiness(UserDto source);
